@@ -1,32 +1,51 @@
-@font-face {
-    font-family: 'SquadaOne-Regular';
-    src: url(css/fonts/SquadaOne-Regular.ttf);
-}
-
 .wrapper {
     background-color: white;
     max-width: 100%;
 }
 
-div {
-    display: block;
-}
-
 
 .nav {
-
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
     color: white;
     background-color: black;
+    justify-content: space-between;
+    align-items: center;
     height: 100px;
     width: 100%;
+    
+
+}
+
+.nav h1 {
+    margin-left: 25px;
+    text-transform: uppercase;
+    font-size: 70px;
+    font-family: 'Squada One', cursive;
+
+}
+
+.nav li {
+    display: inline-block;
+    margin-right: 25px;
+    margin-left: 25px;
+
+}
+
+.nav li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+
+
 }
 
 .heroimage {
+    font-family: 'Titillium Web', sans-serif;
     margin: 0 auto;
     position: relative;
     text-align: left;
     color: white;
-
 }
 
 .heroimg {
@@ -41,20 +60,22 @@ div {
 }
 
 .heroimage button {
+    font-family: 'Titillium Web', sans-serif;
     background-color: maroon;
     border-color: white;
     position: absolute;
     width: 25%;
     height: 5%;
     top: 275px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .title {
-    font-size: 75px;
+    font-size: 60px;
+    text-transform: uppercase;
     position: absolute;
     left: 25px;
-    top: 100px;
+    top: 125px;
     color: white;
 }
 
@@ -62,26 +83,27 @@ div {
     font-size: 30px;
     position: absolute;
     left: 25px;
-    top: 200px;
+    top: 210px;
     color: white;
-
 }
 
 .featured {
-
+    font-family: 'Titillium Web', sans-serif;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px 100px 100px;
     color: black;
+    margin-top: 75px;
+
 }
 
 .feature img {
-
     width: 100%;
     height: 200px;
     display: block;
     object-fit: cover;
+    object-position: center;
     position: static;
     overflow: hidden;
 }
@@ -91,31 +113,140 @@ button {
     background-color: green;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #fff;
-    outline: auto;
+    border:none;
+    font-family: 'Titillium Web', sans-serif;
+
 }
 
 .gallery {
-    background-color: black;
-    margin-top: 100px;
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    max-width: 100%;
+    margin-top: 200px;
     height: 500px;
+    background-color: rgb(33, 33, 33);
 }
+
 
 .galleryinfo {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    max-width: 25%;
+    color: antiquewhite;
+    padding: 5px;
 
 }
 
-.galleryimg img {
+.galleryinfo button {
+    font-family: 'Titillium Web', sans-serif;
+    width: 125px;
+    height: 30px;
+}
+
+.gallerypics {
+    display: flex;
+    max-width: 75%;
+    flex-wrap: wrap;
+    padding: 25px;
+    justify-content: space-around;
+
+}
+
+.gallerypics img {
+    height: 200px;
+    width: 350px;
+}
+
+
+.advertisement {
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    text-align: right;
+    height: 750px;
+    width: 10%;
+    margin-left: 15%;
+}
+
+.adtext img {
+    margin-top: 25px;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     height: 300px;
-    object-fit: cover;
-    overflow: hidden;
+    color: rgb(180, 180, 180);
+    background-color: rgb(33, 33, 33);
+
 }
 
-.gallery h3 {
-    color: black ;
+.logofoot {
+    font-family: 'Squada One', cursive;
+    text-transform: uppercase;
+    margin-left: 15px;
+    margin-top: 10px;
 }
+
+.logofoot h1 {
+    display: flex;
+    font-size: 50px;
+    margin: 0 auto;
+}
+
+.socials li  {
+    font-family: 'Titillium Web', sans-serif;
+    margin-bottom: 25px;
+    font-size: 30px;
+
+
+}
+
+.socials li a {
+
+    color: rgb(180, 180, 180);
+    text-decoration: none;
+
+}
+
+.facebook {
+    list-style-image: url(../images/facebook-logo.png);
+}
+
+.twitter {
+    list-style-image: url(../images/twitter-logo.png);
+}
+
+.pinterest {
+    list-style-image: url(../images/pinterest-logo.png);
+}
+
+.navfoot li {
+    font-family: 'Titillium Web', sans-serif;
+    list-style-type: none;
+    font-size: 30px;
+    margin: 15px;
+}
+
+.navfoot li a {
+    text-decoration: none;
+    color: rgb(180, 180, 180);
+}
+
+.map img {
+    height: 250px;
+    width: 700px;
+    align-self: center;
+    margin-top: 25px;
+    padding-right: 25px;
+
+}
+
 
 
 
